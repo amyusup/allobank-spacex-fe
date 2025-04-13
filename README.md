@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SpaceX Rocket Explorer - Technical Test Project
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project is a technical test implementation showcasing SpaceX rocket data with a modern Next.js interface. It fulfills all specified functional and non-functional requirements.
+
+## Key Features
+
+### Functional Requirements
+
+✅ **Rocket List View**
+
+- Displays rocket images, names, and descriptions
+- Responsive grid layout
+
+✅ **Search Functionality**
+
+- Real-time rocket search by name
+- Instant results filtering
+
+✅ **Add Rocket Feature**
+
+- Form to add new rockets
+- Client-side validation
+
+✅ **Rocket Details**
+
+- Comprehensive view with:
+  - High-quality images
+  - Technical specifications
+  - Cost per launch
+  - Country of origin
+  - First flight date
+
+### Technical Implementation
+
+🔧 **API Integration**
+
+- Uses official [SpaceX API](https://github.com/r-spacex/SpaceX-API)
+- Optimized data fetching
+
+⚛️ **State Management**
+
+- Context API for global state
+- Local state for UI interactions
+
+🔄 **Lifecycle Handling**
+
+- Proper component mounting/unmounting
+- Memory leak prevention
+
+🖥️ **UI States**
+
+- Loading indicators
+- Error handling with retry
+- Success states
+
+## Detailed Project Structure
+
+```
+project/
+├── public/          # Static assets
+├── src/
+│   ├── app/         # Page routes
+│   │   └── rockets/ # Rocket features
+│   ├── components/
+│   │   ├── element/ # Atomic UI components
+│   │   ├── fragment/ # Composite components
+│   │   └── svg/     # Custom SVG components
+│   ├── containers/  # Complete page implementations
+│   ├── helper/      # Utility functions
+│   └── styles/      # Global CSS
+```
+
+## Development Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `dev`: Development mode
+- `build`: Production build
+- `start`: Production server
+- `lint`: Code quality check
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Ready for Vercel deployment with optimized builds.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technical Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Custom SVG components (located in src/components/svg)
+- SpaceX REST API

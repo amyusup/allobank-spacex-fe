@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+body {
+  background-color: black;
+  color: #C5C6C7;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px black inset !important; 
+  -webkit-text-fill-color: #C5C6C7 !important;
+  border: 1px solid #C5C6C7 !important;
+  caret-color: #C5C6C7 !important;
+}
+input:-webkit-autofill:focus {
+  border: 1px solid #155dfc !important;
+  box-shadow:
+  0 0 0 2px #155dfc,
+  0 0 0 1000px black inset !important;
+}
+
+
+
+
